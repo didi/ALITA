@@ -23,33 +23,33 @@ ALITA aims to build a one-stop platform for geographic information visualization
 
 ## Environment
 
-•	**Language** Java 8+、JAVASCRIPT
+•	**Language** : Java 8+、JAVASCRIPT
 
-•	**IDE(Java)** IDEA/Eclipse installs the Lombok plug-in、VSCode
+•	**IDE(Java)** : IDEA/Eclipse installs the Lombok plug-in、VSCode
 
-•	**Dependency** management：Maven、npm
+•	**Dependency management** : Maven、npm
 
-•	**Database** MySQL5.7+
+•	**Database** : MySQL5.7+
 
 ## Back end
 
-•	**Base framework** Spring Boot 2.2.0.RELEASE
+•	**Base framework** : Spring Boot 2.2.0.RELEASE
 
-•	**ORM framework** Mybatis-Plus 3.3.0
+•	**ORM framework** : Mybatis-Plus 3.3.0
 
-•	**Log** logback
+•	**Log** : logback
 
 ## Front end
 
-•	**Language** React
+•	**Language** : React
 
-•	**Component** antd
+•	**Component** : antd
 
-•	**Framework** dva
+•	**Framework** : dva
 
-•	**Scaffold** create-react-app
+•	**Scaffold** : create-react-app
 
-•	**Bundler Tool** webpack
+•	**Bundler Tool** : webpack
 
 # Development
 
