@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60000" debug="false">
+
+    <property name="LOG_NAME" value="alita"/>
+    <property name="LOG_PATH" value="./log"/>
+    <property name="LOG_NUMBER" value="72"/>
+    <property name="LOG_LEVEL" value="INFO"/>
+
+    <contextName>${LOG_NAME}</contextName>
+
+    <appender name="CONSOLE_LOG"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%level][%d{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"}][%logger{100}:%line:%thread]%message%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${LOG_LEVEL}</level>
+        </filter>
+    </appender>
+
+    <appender name="FILE_LOG"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>[%level][%d{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"}][%logger{100}:%line:%thread]%message%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_PATH}/${LOG_NAME}.log.%d{yyyyMMddHH}</FileNamePattern>
+            <MaxHistory>${LOG_NUMBER}</MaxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${LOG_LEVEL}</level>
+        </filter>
+    </appender>
+
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>2048</queueSize>
+        <includeCallerData>true</includeCallerData>
+        <appender-ref ref="FILE_LOG"/>
+    </appender>
+
+    <logger name="com.alita" level="${LOG_LEVEL}" additivity="false">
+        <appender-ref ref="CONSOLE_LOG"/>
+        <appender-ref ref="FILE_LOG"/>
+    </logger>
+
+    <root level="${LOG_LEVEL}">
+        <appender-ref ref="CONSOLE_LOG"/>
+        <appender-ref ref="FILE_LOG"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,15 @@
+target/
+
+.classpath
+.project
+.DS_Store
+
+.settings/
+.idea/
+*.iml
+
+app.pid
+
+output/
+log/
+tmp/
