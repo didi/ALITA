@@ -80,7 +80,7 @@ Any contribution is welcome. All issues and pull requests are highly appreciated
 
 **dingtalk : 30067799**
 
-<img width="200" height="200">![dingtalk](ALITA.JPG)
+![dingtalk](ALITA.jpg)
 
 # License
 
