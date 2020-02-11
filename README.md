@@ -74,7 +74,7 @@ npm start
 
 # Contributing
 
-Any contribution is welcome. All issues and pull requests are highly appreciated! For more details, please refer to [the contribution guide](CONTRIBUTING).
+Any contribution is welcome. All issues and pull requests are highly appreciated! For more details, please refer to  [the contribution guide](CONTRIBUTING).
 
 # License
 
