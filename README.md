@@ -80,8 +80,10 @@ Any contribution is welcome. All issues and pull requests are highly appreciated
 
 **dingtalk : 30067799**
 
-![dingtalk](ALITA开发者交流群.JPG)
+<img width="200" height="200">![dingtalk](ALITA.JPG)
 
 # License
+
+<img alt="Apache-2.0 license" src="https://lucene.apache.org/images/mantle-power.png" width="128">
 
 ALITA is licensed under the terms of the Apache license. See [LICENSE ](LICENSE)for more information.
